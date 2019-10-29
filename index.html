@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Tracalorie | Meal & Calorie</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<nav>
+			<div class="nav-wrapper">
+				<div class="container">
+					<a href="#" class="brand-logo center">Tracalorie</a>
+					<ul class="right">
+						<li>
+							<a href="#" class="clear-btn btn">Clear All</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="card">
+				<div class="card-content">
+					<span class="card-title">Add Meal & Calories</span>
+					<form class="col">
+						<div class="row">
+							<div class="input-field col s6">
+								<input type="text" placeholder="Add Item" id="item-name" />
+								<label for="item-name">Meal</label>
+							</div>
+							<div class="input-field col s6">
+								<input
+									type="number"
+									placeholder="Add Calories"
+									id="item-calories"
+								/>
+								<label for="item-calories">Calories</label>
+							</div>
+							<button class="add-btn btn blue">Add Meal</button>
+							<button class="update-btn btn orange darken-3">
+                Update Meal
+              </button>
+              <button class="cancel-btn btn grey">Cancel</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<h3 class="center-align">
+				Total Calories: <span class="total-calories">0</span>
+			</h3>
+
+			<ul id="item-list" class="collection">
+				<li class="collection-item">
+					<strong>Banana Shake</strong> <em>150 Calories</em>
+					<a href="#" class="delete-item secondary-content"
+						><i class="material-icons">delete</i></a
+					>
+					<a href="#" class="edit-item secondary-content"
+						><i class="material-icons">edit</i></a
+					>
+				</li>
+			</ul>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
